@@ -1,0 +1,49 @@
+Activity Class
+
+Methods:
+Activity()
+DisplayStartingMessage():void
+DisplayEndingMessage():void
+ShowSpinner(seconds : int):void
+ShowCountDown(seconds : int):void
+
+Variables:
+_name:string
+_description:string
+_duration:int
+
+----------------------------------
+BreathingActivity Subclass
+
+Methods:
+BreathingActivity()
+Run():void
+
+-------------------------------
+ListingActivity Subclass
+
+Methods:
+ListingActivity()
+Run():void
+GetRandomPrompt():void
+GetListFromUser():List<string>
+
+Variables:
+_count:int
+_prompts:List<string>
+
+-------------------------------
+ReflectingActivity Subclass
+
+Methods:
+ReflectingActivity()
+Run():void
+GetRandomPrompt():string
+GetRandomQuestion():string
+DisplayPrompt():void
+DisplayQuestion():void
+
+Variables:
+
+_prompts:List<string>
+_questions:List<string>

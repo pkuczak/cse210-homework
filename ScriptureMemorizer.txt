@@ -1,0 +1,37 @@
+Scripture (Reference:Reference, text:string)
+
+Methods:
+HideRandomWords (numberToHide : int) : void
+GetDisplayText () : string
+IsCompletelyHidden () : bool
+
+Variables:
+_reference : Reference
+_words : List<Word>
+
+-------------------------------
+Word (text:string)
+
+Methods:
+Hide() : void
+Show() : void
+IsHidden() : bool
+GetDisplayText() : string
+
+Variables:
+_text : string
+_isHidden : bool
+
+------------------------------
+Reference (book:string, chapter:int, verse:int) - single verse
+Reference (book:string, chapter:int, startVerse:int, endVerse:int) - multi verse
+
+Methods:
+GetDisplayText() : string
+possiible getters and setters
+
+Variables:
+_book : string
+_chapter : int
+_verse : int
+_endVerse : int
